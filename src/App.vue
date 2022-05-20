@@ -23,7 +23,7 @@
     box-sizing: border-box;
 }
 #app {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   margin: 2rem;
@@ -32,7 +32,7 @@
 h1 {
     font-weight: 900;
     font-size: 2rem;
-    margin: 3rem 0 2rem 0;
+    margin: 20px;
 }
 nav a {
     font-weight: bold;
@@ -44,10 +44,10 @@ nav a {
     padding: 0.25rem 0.75rem;
 }
 nav a.router-link-exact-active {
-    color: #0428ff;
+    color: #88dbb4;
 }
 input[type="submit"] {
-    background: #0028ff;
+    background: #88dbb4;
     color: white;
     border-radius: 10px;
     padding: 0.5rem 1rem;
@@ -63,7 +63,7 @@ input[type="checkbox"] {
     margin: 0 0.5rem 0 0;
 }
 input[type="submit"]:hover {
-    background: #3600ff;
+    background: #88dbb4;
     box-shadow: 0 3px 7px #0428ff7a;
 }
 input {

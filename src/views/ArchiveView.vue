@@ -1,5 +1,5 @@
 <template>
-    <h1>Archived Items:</h1>
+    <h1>Archived Tasks:</h1>
     <TodoList location="archive" />
 </template>
 

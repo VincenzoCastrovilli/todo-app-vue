@@ -2,8 +2,8 @@
 <template>
     <div id="todo-list">
         <div id="new-todo-list-item">
-            <input type="text" placeholder="Add a new item.." id="new-todo-list-item-input" @keypress.enter="newItem" v-model="newTodoItem"/>
-            <input type="submit" id="new-todo-list-item-submit" @click="newItem" value="Add To Do List Item" />
+            <input type="text" placeholder="Add a new task..." id="new-todo-list-item-input" @keypress.enter="newItem" v-model="newTodoItem"/>
+            <input type="submit" id="new-todo-list-item-submit" @click="newItem" value="Submit or press Enter" />
         </div>
         <div class="list-item" v-for="n in todos" :key="n.id">
             <div class="list-item-holder" v-if="n.location == location" :data-status="n.completed">
@@ -95,10 +95,9 @@ export default {
 }
 
 .delete-item, .archive-item {
-    font-size: 0.875rem;
+    font-size: 0.65rem;
     background: #eee;
     margin: 0 0 0 0.5rem;
-    height: 1rem;
     border-radius: 100px;
     transition: all 0.1s ease-out;
     color: rgba(0,0,0,0.5);
@@ -109,12 +108,20 @@ export default {
     display: flex;
     align-items: center;
 }
-.delete-item:hover, .archive-item:hover {
-    background: #ddd;
+.delete-item:hover {
+    background: rgb(226, 100, 100);
     color: black;
+    font-weight: 600;
 }
+
+.archive-item:hover {
+    color: black;
+    font-weight: 600;
+    background: #88dbb4;
+}
+
+
 [data-status="false"] label {
-    color: #0428ff;
     font-weight: 600;
 }
 [data-status="true"] label {
