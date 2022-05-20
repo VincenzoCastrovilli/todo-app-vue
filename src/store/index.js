@@ -66,12 +66,12 @@ export default createStore({
         moveTodoItem(state, todoItem) {
             let id = todoItem.id;
             let location = todoItem.location;
-            let findElement = state.todos.find((x) => x.id = id);
+            let findElement = state.todos.find((x) => x.id === id);
 
             if (findElement != null) {
                 findElement.location = location;
             } else {
-                console.log('Item not found');
+                alert('Item not found');
             }
         }
 

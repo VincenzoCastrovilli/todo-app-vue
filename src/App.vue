@@ -18,27 +18,32 @@
 </script>
 
 <style>
+
+* {
+    box-sizing: border-box;
+}
 #app {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   margin: 2rem;
+  text-align: center;
 }
 h1 {
     font-weight: 900;
     font-size: 2rem;
     margin: 3rem 0 2rem 0;
 }
-#nav a {
+nav a {
     font-weight: bold;
     color: #2c3e50;
-    margin: 0 1rem 0 0;
+    margin: 5px;
     background: #eee;
     border-radius: 14px;
     text-decoration: none;
     padding: 0.25rem 0.75rem;
 }
-#nav a.router-link-exact-active {
+nav a.router-link-exact-active {
     color: #0428ff;
 }
 input[type="submit"] {

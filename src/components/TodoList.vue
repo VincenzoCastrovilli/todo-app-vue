@@ -1,3 +1,4 @@
+
 <template>
     <div id="todo-list">
         <div id="new-todo-list-item">
@@ -11,7 +12,7 @@
                 </div>
                 <div class="item-options">
                     <div class="delete-item" @click="deleteItem" :data-id="n.id">Delete</div>
-                    <div class="archive-item" v-if="n.location !== 'archive'" @click="archiveItem" :data-id="n.id">Archive</div>
+                    <div class="archive-item" v-if="(n.location !== 'archive') && (n.completed === true)" @click="archiveItem" :data-id="n.id">Archive</div>
                 </div>
             </div>
         </div>
@@ -74,8 +75,8 @@ export default {
 <style scoped>
 #todo-list {
     border-radius: 14px;
-    max-width: 400px;
     border: 2px solid #ddd;
+    margin: 0px;
 }
 .list-item-holder {
     display: flex;
